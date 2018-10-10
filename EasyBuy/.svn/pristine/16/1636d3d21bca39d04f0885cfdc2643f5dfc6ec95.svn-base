@@ -76,7 +76,7 @@ public class ProductDaoImp extends BaseDaoImp implements ProductDao{
 	@Override
 	public int getProductCount(ProductParams params) {
 		int count = 0 ;
-		StringBuffer sql = new StringBuffer("select count(1) from easybuy_product where 1=1");
+		StringBuffer sql = new StringBuffer("select count(*) from easybuy_product where 1=1");
 		List<Object> paramsList = new ArrayList<Object>(); 
 		ResultSet rs = null;
 		if(!StringUtils.isEmpty(params.getKeyWords())){

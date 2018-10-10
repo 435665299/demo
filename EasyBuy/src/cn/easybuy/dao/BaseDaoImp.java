@@ -23,7 +23,7 @@ public class BaseDaoImp {
 	/**
 	 * ²éÑ¯Êı¾İ¿â
 	 * 
-	 * @param sql
+	 * @param sql 
 	 * @param params
 	 * @return rs
 	 */

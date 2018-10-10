@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="ctx" value="${pageContext.request.contextPath }" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="main" class="wrap">
+	<div class="lefter">
+		<div class="box">
+			<h2>商品分类</h2>
+			<dl>
+			<c:forEach items="${pcList}" var="pc1">
+				<dt>图书音像</dt>
+				<dd><a href="product-list.html">图书</a></dd>
+			</c:forEach>
+			</dl>
+		</div>
+		<div class="spacer"></div>
+		<div class="last-view">
+			<h2>最近浏览</h2>
+			<dl class="clearfix">
+				<dt><img src="${ctx}/statics/images/product/0_tiny.gif" /></dt>
+				<dd><a href="product-view.html">法国德菲丝松露精品巧克力500g/盒</a></dd>
+				<dt><img src="${ctx}/statics/images/product/0_tiny.gif" /></dt>
+				<dd><a href="product-view.html">法国德菲丝松露精品巧克力500g/盒</a></dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>
